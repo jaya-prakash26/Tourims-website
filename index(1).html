@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JP Travels</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!-- navbar -->
+        <nav class="navbar">
+            <h1 class="logo" style="color: black; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">JP Travels</h1>
+            <ul class="nav-links">
+                <li><a class="word" href="index.html">Home</a></li>
+                <li><a class="word" href="about.html">About</a></li>
+                <li><a class="word" href="destination.html">Destination</a></li>
+                <li><a class="word" href="contact.html">Contact</a></li>
+                <!-- <li class="ctn"><a href="login.html">Login</a></li> -->
+            </ul>
+        </nav>        
+
+        <header>
+            <div class="header-content">
+                <h2>Explore all of Incredible India</h2>
+                <div class="line"></div> 
+                <h1>Live to Explore</h1>
+                <a href="destination.html" class="ctn">Learn More</a>
+            </div>       
+        </header>
+
+        <section class="events">
+            <div class="title">
+                <h1>Upcoming Events</h1>
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="img3.jpg" alt="">
+                    <h4>Mahashivaratri</h4>
+                    <p>Mahashivaratri celebration at Isha Coimbatore.</p>
+                    <a href="destination.html" class="ctn">Learn More</a>
+                </div>
+
+                <div class="col">
+                    <img src="img4.jpg" alt="">
+                    <h4>Chithirai Thiruvizha</h4>
+                    <p>Chithirai Thiruvizha celebration at Thanjavur Periya Kovil.</p>
+                    <a href="destination.html" class="ctn">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="explore">
+            <div class="explore-content">
+                <h1>Explore the different cultures of India</h1> 
+            </div>
+        </section>
+
+        <section class="tours">
+            <div class="row">
+                <div class="col content-col">
+                    <h1>Upcoming Tours</h1>
+                    <div class="line"></div>
+                    <p>Tour of Northern India (May 2024)</p>
+                    <p>Tour of Southern India (July 2024)</p>
+                    <p>Union Territories of India Tour (September 2024)</p>
+                    <a href="destination.html" class="ctn">Learn More</a>
+                </div>
+
+                <div class="col image-col">
+                    <div class="image-gallery">
+                        <img src="img3.jpg" alt="">
+                        <img src="img4.jpg" alt="">
+                        <img src="img5.jpg" alt="">
+                        <img src="img6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="footer">
+            <p>JP Travels</p>
+            <p>Copyright ©; 2024, All Rights Reserved</p>
+        </section>
+
+        <script>
+            const menuBtn = document.querySelector('.menu-btn')
+            const navlinks = document.querySelector('.nav-links')
+
+            menuBtn.addEventListener('click',()=>{
+                navlinks.classList.toggle('mobile-menu')
+            })
+        </script>
+    </body>
+</html>
